@@ -42,6 +42,7 @@ public class RedisControllr {
 	 * 删除 set类型的数据
 	 */
 	@RequestMapping("removeSetValue")
+	@ResponseBody
 	public String removeSetValue(String key) {
 		springRedisUtil.delete(key);
 		return "excuted";
