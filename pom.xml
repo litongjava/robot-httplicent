@@ -85,6 +85,16 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+				    <mainClass>com.uairobot.robot.Application</mainClass>
+				</configuration>
+				<executions>
+				    <execution>
+				        <goals>
+				            <goal>repackage</goal>
+				        </goals>
+				    </execution>
+				</executions>
 			</plugin>
 			<!-- 配置Tomcat插件 -->
 			<plugin>
